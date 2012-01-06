@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CollectionsProtocol' target in the 'CollectionsProtocol' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

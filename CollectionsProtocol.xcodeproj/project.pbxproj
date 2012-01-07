@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		99AB86E914B7E36300080C5B /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
-		99AB86EC14B7EC7000080C5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		99AB86EC14B7EC7000080C5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = CollectionsProtocol/README.md; sourceTree = "<group>"; };
 		99F188A414B739D700E5CAFF /* libCollectionsProtocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollectionsProtocol.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F188A714B739D700E5CAFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		99F188AC14B739D700E5CAFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +89,7 @@
 		99F1889914B739D700E5CAFF = {
 			isa = PBXGroup;
 			children = (
+				99AB86EC14B7EC7000080C5B /* README.md */,
 				99F188AD14B739D700E5CAFF /* CollectionsProtocol */,
 				99F188BF14B739D700E5CAFF /* CollectionsProtocolTests */,
 				99F188A614B739D700E5CAFF /* Frameworks */,
@@ -134,7 +135,6 @@
 				99F188E614B73F6800E5CAFF /* NSSet+CollectionsProtocol.h */,
 				99F188E714B73F6900E5CAFF /* NSSet+CollectionsProtocol.m */,
 				99AB86E914B7E36300080C5B /* license.txt */,
-				99AB86EC14B7EC7000080C5B /* README.md */,
 				99F188AE14B739D700E5CAFF /* Supporting Files */,
 			);
 			path = CollectionsProtocol;

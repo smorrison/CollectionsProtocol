@@ -23,12 +23,9 @@ But a whole lot nicer than
 
 Likewise, `collect:` and `select:` provide methods for mapping and reducing respectively.
 ``` objc
-    NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1], 
-                                        [NSNumber numberWithInteger:2], 
-                                        [NSNumber numberWithInteger:3], 
-                                        [NSNumber numberWithInteger:4], 
-                                        [NSNumber numberWithInteger:5], 
-                                        nil];
+	NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1], [NSNumber numberWithInteger:2], 
+	[NSNumber numberWithInteger:3], [NSNumber numberWithInteger:4], 
+    [NSNumber numberWithInteger:5], nil];
     [array collect:^id(id each) { return [each description]; }]; // {@"1", @"2", @"3", @"4", @"5"}
     [array select:^BOOL(id each) { return [each integerValue] % 2; }]; // {1, 3, 5}
 ```

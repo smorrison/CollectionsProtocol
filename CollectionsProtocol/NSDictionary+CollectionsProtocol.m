@@ -1,5 +1,5 @@
 //
-//  CollectionsProtocol.h
+//  NSDictionary+CollectionsProtocol.m
 //  CollectionsProtocol
 //
 //  Created by Sean Morrison on 1/6/12.
@@ -23,6 +23,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 // SOFTWARE.
 
-#import "NSArray+CollectionsProtocol.h"
-#import "NSSet+CollectionsProtocol.h"
 #import "NSDictionary+CollectionsProtocol.h"
+#import "NSArray+CollectionsProtocol.h"
+
+@implementation NSDictionary (CollectionsProtocol)
+
+- (void)keysAndValuesDo:(void (^)(id key, id value))block 
+{
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
+        block(key, value);
+    }];
+}
+
+- (void)keysDo:(void (^)(id value))block 
+{
+    [[self allKeys] do:block];
+}
+
+- (void)valuesDo:(void (^)(id key))block 
+{
+    [[self allValues] do:block];
+}
+
+@end

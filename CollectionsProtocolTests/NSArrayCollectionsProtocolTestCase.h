@@ -1,5 +1,5 @@
 //
-//  CollectionsProtocol.h
+//  NSArrayCollectionsProtocolTests.h
 //  CollectionsProtocol
 //
 //  Created by Sean Morrison on 1/6/12.
@@ -23,6 +23,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 // SOFTWARE.
 
-#import "NSArray+CollectionsProtocol.h"
-#import "NSSet+CollectionsProtocol.h"
-#import "NSDictionary+CollectionsProtocol.h"
+//  Logic unit tests contain unit test code that is designed to be linked into an independent test executable.
+
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface NSArrayCollectionsProtocolTestCase : SenTestCase {
+    NSArray *array1;
+    NSArray *array2;
+    NSMutableArray *marray1;
+    NSMutableArray *marray2;
+}
+
+@end

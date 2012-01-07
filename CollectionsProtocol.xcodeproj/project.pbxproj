@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99AB86EA14B7E36300080C5B /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99AB86E914B7E36300080C5B /* license.txt */; };
 		99F188A814B739D700E5CAFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188A714B739D700E5CAFF /* Cocoa.framework */; };
-		99F188B214B739D700E5CAFF /* CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188B114B739D700E5CAFF /* CollectionsProtocol.m */; };
 		99F188BA14B739D700E5CAFF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188B914B739D700E5CAFF /* SenTestingKit.framework */; };
 		99F188BB14B739D700E5CAFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188A714B739D700E5CAFF /* Cocoa.framework */; };
 		99F188BE14B739D700E5CAFF /* libCollectionsProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188A414B739D700E5CAFF /* libCollectionsProtocol.a */; };
 		99F188C414B739D700E5CAFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99F188C214B739D700E5CAFF /* InfoPlist.strings */; };
-		99F188C714B739D700E5CAFF /* CollectionsProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188C614B739D700E5CAFF /* CollectionsProtocolTests.m */; };
+		99F188DE14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F188DC14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.h */; };
+		99F188DF14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188DD14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m */; };
+		99F188E014B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188DD14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m */; };
+		99F188E314B73F5400E5CAFF /* NSArray+CollectionsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F188E114B73F5400E5CAFF /* NSArray+CollectionsProtocol.h */; };
+		99F188E414B73F5400E5CAFF /* NSArray+CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188E214B73F5400E5CAFF /* NSArray+CollectionsProtocol.m */; };
+		99F188E514B73F5400E5CAFF /* NSArray+CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188E214B73F5400E5CAFF /* NSArray+CollectionsProtocol.m */; };
+		99F188E814B73F6900E5CAFF /* NSSet+CollectionsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F188E614B73F6800E5CAFF /* NSSet+CollectionsProtocol.h */; };
+		99F188E914B73F6900E5CAFF /* NSSet+CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188E714B73F6900E5CAFF /* NSSet+CollectionsProtocol.m */; };
+		99F188EA14B73F6900E5CAFF /* NSSet+CollectionsProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188E714B73F6900E5CAFF /* NSSet+CollectionsProtocol.m */; };
+		99F188F014B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F188EF14B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.m */; };
+		99F189D714B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F189D614B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.m */; };
+		99F189DB14B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F189DA14B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,20 +38,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99AB86E914B7E36300080C5B /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		99F188A414B739D700E5CAFF /* libCollectionsProtocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollectionsProtocol.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F188A714B739D700E5CAFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		99F188AA14B739D700E5CAFF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		99F188AB14B739D700E5CAFF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		99F188AC14B739D700E5CAFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		99F188AF14B739D700E5CAFF /* CollectionsProtocol-Prefix.pch */ = {isa = PBXFileReference; path = "CollectionsProtocol-Prefix.pch"; sourceTree = "<group>"; };
-		99F188B014B739D700E5CAFF /* CollectionsProtocol.h */ = {isa = PBXFileReference; path = CollectionsProtocol.h; sourceTree = "<group>"; };
-		99F188B114B739D700E5CAFF /* CollectionsProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionsProtocol.m; sourceTree = "<group>"; };
+		99F188AF14B739D700E5CAFF /* CollectionsProtocol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollectionsProtocol-Prefix.pch"; sourceTree = "<group>"; };
 		99F188B814B739D700E5CAFF /* CollectionsProtocolTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionsProtocolTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F188B914B739D700E5CAFF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		99F188C114B739D700E5CAFF /* CollectionsProtocolTests-Info.plist */ = {isa = PBXFileReference; path = "CollectionsProtocolTests-Info.plist"; sourceTree = "<group>"; };
+		99F188C114B739D700E5CAFF /* CollectionsProtocolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionsProtocolTests-Info.plist"; sourceTree = "<group>"; };
 		99F188C314B739D700E5CAFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		99F188C514B739D700E5CAFF /* CollectionsProtocolTests.h */ = {isa = PBXFileReference; path = CollectionsProtocolTests.h; sourceTree = "<group>"; };
-		99F188C614B739D700E5CAFF /* CollectionsProtocolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionsProtocolTests.m; sourceTree = "<group>"; };
+		99F188DC14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CollectionsProtocol.h"; sourceTree = "<group>"; };
+		99F188DD14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CollectionsProtocol.m"; sourceTree = "<group>"; };
+		99F188E114B73F5400E5CAFF /* NSArray+CollectionsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CollectionsProtocol.h"; sourceTree = "<group>"; };
+		99F188E214B73F5400E5CAFF /* NSArray+CollectionsProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CollectionsProtocol.m"; sourceTree = "<group>"; };
+		99F188E614B73F6800E5CAFF /* NSSet+CollectionsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CollectionsProtocol.h"; sourceTree = "<group>"; };
+		99F188E714B73F6900E5CAFF /* NSSet+CollectionsProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CollectionsProtocol.m"; sourceTree = "<group>"; };
+		99F188EE14B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayCollectionsProtocolTestCase.h; sourceTree = "<group>"; };
+		99F188EF14B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayCollectionsProtocolTestCase.m; sourceTree = "<group>"; };
+		99F189D514B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSetCollectionsProtocolTestCase.h; sourceTree = "<group>"; };
+		99F189D614B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetCollectionsProtocolTestCase.m; sourceTree = "<group>"; };
+		99F189D914B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryCollectionsProtocolTestCase.h; sourceTree = "<group>"; };
+		99F189DA14B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryCollectionsProtocolTestCase.m; sourceTree = "<group>"; };
+		99F189DC14B7922C00E5CAFF /* CollectionsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +116,6 @@
 		99F188A914B739D700E5CAFF /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99F188AA14B739D700E5CAFF /* AppKit.framework */,
-				99F188AB14B739D700E5CAFF /* CoreData.framework */,
 				99F188AC14B739D700E5CAFF /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
@@ -107,8 +124,14 @@
 		99F188AD14B739D700E5CAFF /* CollectionsProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				99F188B014B739D700E5CAFF /* CollectionsProtocol.h */,
-				99F188B114B739D700E5CAFF /* CollectionsProtocol.m */,
+				99F189DC14B7922C00E5CAFF /* CollectionsProtocol.h */,
+				99F188E114B73F5400E5CAFF /* NSArray+CollectionsProtocol.h */,
+				99F188E214B73F5400E5CAFF /* NSArray+CollectionsProtocol.m */,
+				99F188DC14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.h */,
+				99F188DD14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m */,
+				99F188E614B73F6800E5CAFF /* NSSet+CollectionsProtocol.h */,
+				99F188E714B73F6900E5CAFF /* NSSet+CollectionsProtocol.m */,
+				99AB86E914B7E36300080C5B /* license.txt */,
 				99F188AE14B739D700E5CAFF /* Supporting Files */,
 			);
 			path = CollectionsProtocol;
@@ -125,8 +148,12 @@
 		99F188BF14B739D700E5CAFF /* CollectionsProtocolTests */ = {
 			isa = PBXGroup;
 			children = (
-				99F188C514B739D700E5CAFF /* CollectionsProtocolTests.h */,
-				99F188C614B739D700E5CAFF /* CollectionsProtocolTests.m */,
+				99F188EE14B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.h */,
+				99F188EF14B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.m */,
+				99F189D914B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.h */,
+				99F189DA14B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.m */,
+				99F189D514B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.h */,
+				99F189D614B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.m */,
 				99F188C014B739D700E5CAFF /* Supporting Files */,
 			);
 			path = CollectionsProtocolTests;
@@ -148,6 +175,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F188DE14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.h in Headers */,
+				99F188E314B73F5400E5CAFF /* NSArray+CollectionsProtocol.h in Headers */,
+				99F188E814B73F6900E5CAFF /* NSSet+CollectionsProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99F188C414B739D700E5CAFF /* InfoPlist.strings in Resources */,
+				99AB86EA14B7E36300080C5B /* license.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F188B214B739D700E5CAFF /* CollectionsProtocol.m in Sources */,
+				99F188DF14B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m in Sources */,
+				99F188E414B73F5400E5CAFF /* NSArray+CollectionsProtocol.m in Sources */,
+				99F188E914B73F6900E5CAFF /* NSSet+CollectionsProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F188C714B739D700E5CAFF /* CollectionsProtocolTests.m in Sources */,
+				99F188E014B73F3700E5CAFF /* NSDictionary+CollectionsProtocol.m in Sources */,
+				99F188E514B73F5400E5CAFF /* NSArray+CollectionsProtocol.m in Sources */,
+				99F188EA14B73F6900E5CAFF /* NSSet+CollectionsProtocol.m in Sources */,
+				99F188F014B745E500E5CAFF /* NSArrayCollectionsProtocolTestCase.m in Sources */,
+				99F189D714B78E9A00E5CAFF /* NSSetCollectionsProtocolTestCase.m in Sources */,
+				99F189DB14B7915700E5CAFF /* NSDictionaryCollectionsProtocolTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -296,8 +334,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_STRICT_ALIASING = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -312,12 +351,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -388,6 +428,7 @@
 				99F188CC14B739D700E5CAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99F188CD14B739D700E5CAFF /* Build configuration list for PBXNativeTarget "CollectionsProtocolTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +437,7 @@
 				99F188CF14B739D700E5CAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

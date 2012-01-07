@@ -1,5 +1,5 @@
 //
-//  CollectionsProtocol.h
+//  NSArray+CollectionsProtocol.h
 //  CollectionsProtocol
 //
 //  Created by Sean Morrison on 1/6/12.
@@ -23,6 +23,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 // SOFTWARE.
 
-#import "NSArray+CollectionsProtocol.h"
-#import "NSSet+CollectionsProtocol.h"
-#import "NSDictionary+CollectionsProtocol.h"
+#import <Foundation/Foundation.h>
+
+@interface NSArray (CollectionsProtocol)
+- (void)do:(void (^)(id object))block;
+- (void)do:(void (^)(id object))block separatedBy:(void (^)())otherBlock;
+- (void)select:(BOOL (^)(id object))selectBlock do:(void (^)(id object))block;
+- (void)reject:(BOOL (^)(id object))rejectBlock do:(void (^)(id object))block;
+- (void)collect:(id (^)(id object))collectBlock do:(void (^)(id object))block;
+- (NSArray *)collect:(id (^)(id object))block;
+- (NSArray *)select:(BOOL (^)(id object))block;
+- (NSArray *)collect:(id (^)(id object))collectBlock select:(BOOL (^)(id object))selectBlock;
+- (NSArray *)select:(BOOL (^)(id object))selectBlock collect:(id (^)(id object))collectBlock;
+- (NSArray *)reject:(BOOL (^)(id object))block;
+- (BOOL)conform:(BOOL (^)(id object))block;
+- (id)inject:(id)start into:(id (^)(id accumulator, id object))block;
+- (id)detect:(BOOL (^)(id object))block;
+- (id)detect:(BOOL (^)(id object))block ifNone:(id)defaultValue;
+@end

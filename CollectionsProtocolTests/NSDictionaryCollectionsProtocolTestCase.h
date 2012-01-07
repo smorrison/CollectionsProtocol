@@ -1,5 +1,5 @@
 //
-//  CollectionsProtocol.h
+//  NSDictionaryCollectionsProtocolTestCase.h
 //  CollectionsProtocol
 //
 //  Created by Sean Morrison on 1/6/12.
@@ -23,6 +23,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 // SOFTWARE.
 
-#import "NSArray+CollectionsProtocol.h"
-#import "NSSet+CollectionsProtocol.h"
-#import "NSDictionary+CollectionsProtocol.h"
+//  Logic unit tests contain unit test code that is designed to be linked into an independent test executable.
+
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface NSDictionaryCollectionsProtocolTestCase : SenTestCase {
+    NSDictionary *dict1;
+    NSMutableDictionary *mdict1;
+}
+
+@end

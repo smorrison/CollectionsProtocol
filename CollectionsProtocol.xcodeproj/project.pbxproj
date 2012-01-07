@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99AB86EA14B7E36300080C5B /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99AB86E914B7E36300080C5B /* license.txt */; };
-		99AB86ED14B7EC7000080C5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 99AB86EC14B7EC7000080C5B /* README.md */; };
+		99AB86EF14B7F92700080C5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 99AB86EE14B7F92700080C5B /* README.md */; };
 		99F188A814B739D700E5CAFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188A714B739D700E5CAFF /* Cocoa.framework */; };
 		99F188BA14B739D700E5CAFF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188B914B739D700E5CAFF /* SenTestingKit.framework */; };
 		99F188BB14B739D700E5CAFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F188A714B739D700E5CAFF /* Cocoa.framework */; };
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		99AB86E914B7E36300080C5B /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
-		99AB86EC14B7EC7000080C5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = CollectionsProtocol/README.md; sourceTree = "<group>"; };
+		99AB86EE14B7F92700080C5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		99F188A414B739D700E5CAFF /* libCollectionsProtocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollectionsProtocol.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F188A714B739D700E5CAFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		99F188AC14B739D700E5CAFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,7 +89,7 @@
 		99F1889914B739D700E5CAFF = {
 			isa = PBXGroup;
 			children = (
-				99AB86EC14B7EC7000080C5B /* README.md */,
+				99AB86EE14B7F92700080C5B /* README.md */,
 				99F188AD14B739D700E5CAFF /* CollectionsProtocol */,
 				99F188BF14B739D700E5CAFF /* CollectionsProtocolTests */,
 				99F188A614B739D700E5CAFF /* Frameworks */,
@@ -256,7 +256,7 @@
 			files = (
 				99F188C414B739D700E5CAFF /* InfoPlist.strings in Resources */,
 				99AB86EA14B7E36300080C5B /* license.txt in Resources */,
-				99AB86ED14B7EC7000080C5B /* README.md in Resources */,
+				99AB86EF14B7F92700080C5B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

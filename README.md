@@ -17,18 +17,19 @@ Which is not as nice as
 ```
 
 But a whole lot nicer than
-``` 
-    [array enumerateObjectsUsingBlock:^(id object, NSUInteger index, BOOL *stop){ NSLog([each description]); }];
-```
+<pre><code>[array enumerateObjectsUsingBlock:^(id object, NSUInteger index, BOOL *stop){
+        NSLog([each description]);
+}];
+</code></pre>
 
 Likewise, `collect:` and `select:` provide methods for mapping and reducing respectively.
-``` 
-    NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1], [NSNumber numberWithInteger:2], 
-    [NSNumber numberWithInteger:3], [NSNumber numberWithInteger:4], 
-    [NSNumber numberWithInteger:5], nil];
+<pre><code>NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1], 
+    [NSNumber numberWithInteger:2], [NSNumber numberWithInteger:3], 
+    [NSNumber numberWithInteger:4], [NSNumber numberWithInteger:5], nil];
     [array collect:^id(id each) { return [each description]; }]; // {@"1", @"2", @"3", @"4", @"5"}
     [array select:^BOOL(id each) { return [each integerValue] % 2; }]; // {1, 3, 5}
-```
+</code></pre>
+
 #Requires
 
 This code uses Objective-C blocks and therefore can only target Mac OSX 10.6 or better.
